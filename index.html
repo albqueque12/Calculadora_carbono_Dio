@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Carbono - Transporte Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌱 Calculadora de Pegada de Carbono</h1>
+            <p>Descubra quanto CO₂ você emite em suas viagens</p>
+        </header>
+
+        <main>
+            <div class="calculator-box">
+                <h2>Calcule suas emissões</h2>
+                
+                <form id="carbonForm">
+                    <div class="form-group">
+                        <label for="origem">Ponto A (Origem):</label>
+                        <input type="text" id="origem" name="origem" placeholder="Ex: São Paulo, SP" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destino">Ponto B (Destino):</label>
+                        <input type="text" id="destino" name="destino" placeholder="Ex: Rio de Janeiro, RJ" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="distancia">Distância (km):</label>
+                        <input type="number" id="distancia" name="distancia" placeholder="Ex: 430" min="0" step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="transporte">Meio de Transporte:</label>
+                        <select id="transporte" name="transporte" required>
+                            <option value="">Selecione...</option>
+                            <option value="carro">🚗 Carro (gasolina)</option>
+                            <option value="carro-flex">🚙 Carro (flex/etanol)</option>
+                            <option value="moto">🏍️ Moto</option>
+                            <option value="onibus">🚌 Ônibus</option>
+                            <option value="metro">🚇 Metrô</option>
+                            <option value="trem">🚆 Trem</option>
+                            <option value="aviao">✈️ Avião</option>
+                            <option value="bicicleta">🚴 Bicicleta</option>
+                            <option value="caminhada">🚶 Caminhada</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-calculate">Calcular Emissão</button>
+                </form>
+
+                <div id="resultado" class="resultado hidden">
+                    <h3>Resultado:</h3>
+                    <div class="resultado-detalhes">
+                        <p><strong>Trajeto:</strong> <span id="trajeto"></span></p>
+                        <p><strong>Distância:</strong> <span id="distanciaResult"></span> km</p>
+                        <p><strong>Transporte:</strong> <span id="transporteResult"></span></p>
+                        <p class="emissao"><strong>Emissão de CO₂:</strong> <span id="co2Result"></span> kg</p>
+                        <p class="equivalencia" id="equivalencia"></p>
+                    </div>
+                    <button class="btn-reset" onclick="resetForm()">Nova Consulta</button>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>ℹ️ Informações sobre Emissões</h3>
+                <p>Fatores de emissão médios (kg CO₂ por km):</p>
+                <ul>
+                    <li><strong>Carro (gasolina):</strong> 0.192 kg/km</li>
+                    <li><strong>Carro (etanol):</strong> 0.130 kg/km</li>
+                    <li><strong>Moto:</strong> 0.103 kg/km</li>
+                    <li><strong>Ônibus:</strong> 0.089 kg/km por passageiro</li>
+                    <li><strong>Metrô:</strong> 0.040 kg/km por passageiro</li>
+                    <li><strong>Trem:</strong> 0.041 kg/km por passageiro</li>
+                    <li><strong>Avião:</strong> 0.255 kg/km por passageiro</li>
+                    <li><strong>Bicicleta/Caminhada:</strong> 0.000 kg/km ✅</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>💚 Contribua para um planeta mais sustentável!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
