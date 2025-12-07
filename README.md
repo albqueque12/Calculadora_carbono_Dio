@@ -118,22 +118,6 @@ Durante o desenvolvimento deste projeto, foram aplicados os seguintes conceitos 
 - ✅ Design responsivo
 - ✅ UX/UI focada em sustentabilidade
 
-## 🎨 Screenshots
-
-### Tela Principal
-Interface limpa e intuitiva com tema verde sustentável.
-
-### Resultado com Comparação
-Análise detalhada mostrando alternativas mais ecológicas.
-
-## 🌟 Diferenciais do Projeto
-
-- 🤖 **Desenvolvido com GitHub Copilot**: Demonstra o poder da IA no desenvolvimento
-- 🌍 **Impacto Social**: Conscientização sobre pegada de carbono
-- 📱 **Responsivo**: Funciona perfeitamente em mobile e desktop
-- 🎯 **Educacional**: Código limpo e bem documentado para fins de aprendizado
-- 💚 **Sustentabilidade**: Tema e propósito alinhados com questões ambientais
-
 ## 🔮 Próximas Melhorias
 
 - [ ] Integração com API de mapas (Google Maps/OpenStreetMap) para cálculo automático de distância
@@ -144,13 +128,6 @@ Análise detalhada mostrando alternativas mais ecológicas.
 - [ ] Modo escuro/claro
 - [ ] Internacionalização (i18n)
 - [ ] PWA (Progressive Web App)
-
-## 👨‍💻 Autor
-
-**Alberto Queque**
-
-- GitHub: [@albqueque12](https://github.com/albqueque12)
-- LinkedIn: [Alberto Queque](https://www.linkedin.com/in/seu-perfil)
 
 ## 📝 Licença
 
